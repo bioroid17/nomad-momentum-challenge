@@ -12,7 +12,7 @@ ol,
 ul {
 	list-style: disc;
 }
-img {
+#background {
 	position: absolute;
 	width: 100%;
 	height: 100%;
@@ -23,14 +23,13 @@ img {
 	z-index: -1;
 }
 body {
-	width: 100vw;
 	height: 100vh;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
 	align-items: center;
 	box-sizing: border-box;
-	padding: 15px;
+	padding: 0px 15px;
 }
 header,
 main,
@@ -42,21 +41,6 @@ footer {
 	animation-delay: 0.2s;
 	display: flex;
 	align-items: center;
-}
-header {
-	height: 30px;
-	flex-direction: row;
-	justify-content: flex-end;
-	box-sizing: border-box;
-}
-main {
-	flex-direction: column;
-	justify-content: center;
-}
-footer {
-	height: 30px;
-	flex-direction: row;
-	justify-content: space-around;
 }
 
 .hidden {
@@ -70,11 +54,35 @@ button:hover {
 	cursor: pointer;
 }
 
+header {
+	flex-direction: row;
+	justify-content: flex-end;
+	box-sizing: border-box;
+}
 #weather {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-around;
-	align-items: flex-end;
+	align-items: center;
+}
+#weather div {
+	height: 64px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+}
+#weather-icon {
+	height: 64px;
+	width: 64px;
+}
+#temperature {
+	font-size: 32px;
+}
+
+main {
+	flex-direction: column;
+	justify-content: center;
 }
 
 #clock {
@@ -126,6 +134,11 @@ input::placeholder {
 	background-color: transparent;
 }
 
+footer {
+	height: 30px;
+	flex-direction: row;
+	justify-content: space-around;
+}
 #quote {
 	height: 100%;
 	display: flex;

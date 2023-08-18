@@ -7,9 +7,14 @@ function onGeoSuccess(position) {
 	fetch(url)
 		.then((response) => response.json())
 		.then((data) => {
-			const weather = document.querySelector("#weather span:first-child");
-			weather.innerText = `${data.weather[0].main} / ${data.main.temp}`;
-			const city = document.querySelector("#weather span:last-child");
+			console.log(data);
+			const temperature = document.querySelector("#temperature");
+			const weatherIcon = document.createElement("img");
+			weatherIcon.id = "weather-icon";
+			weatherIcon.src = `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`;
+			document.querySelector("#weather div").append(weatherIcon);
+			temperature.innerText = `${parseInt(data.main.temp)}℃`;
+			const city = document.querySelector("#city");
 			city.innerText = data.name;
 		});
 }
