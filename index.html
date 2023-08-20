@@ -7,7 +7,7 @@
 		<link rel="stylesheet" href="css/style.css" />
 	</head>
 	<body>
-		<div id="momentum">
+		<div id="momentum" class="bright">
 			<header>
 				<div id="links">
 					<span>Favorite Links</span>
@@ -47,11 +47,18 @@
 				</div>
 			</main>
 			<footer>
+				<label for="bg-add">
+					Add Background
+					<input type="file" accept="image/*" id="bg-add" />
+				</label>
 				<div id="quote">
 					<span></span>
 					<span></span>
 				</div>
-				<dialog class="lower"></dialog>
+				<div id="font-color">
+					<span>Dark</span>
+					<span>Bright</span>
+				</div>
 			</footer>
 		</div>
 		<div id="meme-maker" class="hidden">
@@ -147,6 +154,7 @@
 		<script src="js/background.js"></script>
 		<script src="js/todo.js"></script>
 		<script src="js/weather.js"></script>
+		<script src="js/font-color.js"></script>
 		<script src="js/meme-maker.js"></script>
 	</body>
 </html>

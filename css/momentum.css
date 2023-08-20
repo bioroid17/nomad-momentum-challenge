@@ -29,12 +29,17 @@ ul {
 	box-sizing: border-box;
 	padding: 0px 15px 5px 15px;
 }
+.bright {
+	color: lightgray;
+}
+.dark {
+	color: darkslategray;
+}
 header,
 main,
 footer {
 	width: 100%;
 	opacity: 0;
-	color: lightgray;
 	animation: appear 0.5s ease-in forwards;
 	animation-delay: 0.2s;
 	display: flex;
@@ -134,27 +139,41 @@ main {
 footer {
 	height: 30px;
 	flex-direction: row;
-	justify-content: space-around;
+	justify-content: space-between;
 }
 #quote {
 	height: 100%;
 	display: flex;
 	flex-direction: column;
-	justify-content: space-between;
+	justify-content: space-around;
 	align-items: center;
 }
 
+#momentum label,
 #weather,
 #links,
-#custom {
+#custom,
+#font-color span {
 	padding: 5px;
 	cursor: pointer;
 	border-radius: 5px;
 	background-color: rgba(127, 127, 127, 0);
 	transition: background-color 0.2s ease-in-out;
 }
+#momentum label:hover,
 #weather:hover,
 #links:hover,
-#custom:hover {
+#custom:hover,
+#font-color span:hover {
 	background-color: rgba(127, 127, 127, 0.5);
+}
+
+#momentum input[type="file"] {
+	display: none;
+}
+
+#font-color {
+	width: 120px;
+	display: flex;
+	justify-content: space-around;
 }

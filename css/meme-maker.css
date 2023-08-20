@@ -41,7 +41,7 @@ canvas {
 	transform: scale(1.2);
 }
 
-#meme-maker input#color {
+input#color {
 	background-color: white;
 }
 
@@ -65,7 +65,7 @@ canvas {
 	opacity: 0.85;
 }
 
-#meme-maker input#text {
+input#text {
 	all: unset;
 	padding: 10px 0px;
 	border-radius: 10px;
@@ -74,6 +74,6 @@ canvas {
 	background-color: white;
 }
 
-#meme-maker input#file {
+input#file {
 	display: none;
 }
