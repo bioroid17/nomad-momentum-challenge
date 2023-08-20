@@ -7,7 +7,6 @@ function onGeoSuccess(position) {
 	fetch(url)
 		.then((response) => response.json())
 		.then((data) => {
-			console.log(data);
 			const temperature = document.querySelector("#temperature");
 			const weatherIcon = document.createElement("img");
 			weatherIcon.id = "weather-icon";

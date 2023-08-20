@@ -4,7 +4,6 @@ const images = [
 	"Babylonia.png",
 	"Camelot.png",
 	"E Pluribus.png",
-	"Fuyuki.png",
 	"Götterdämmerung 2.png",
 	"Halloween2017Map1.png",
 	"Okeanos.png",
