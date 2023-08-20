@@ -21,4 +21,4 @@ const bgImage = document.createElement("img");
 bgImage.src = `img/${chosenImage}`;
 bgImage.id = "background";
 
-document.body.appendChild(bgImage);
+document.querySelector("#momentum").appendChild(bgImage);
