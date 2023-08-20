@@ -1,4 +1,4 @@
-const images = [
+let images = [
 	"Agartha.png",
 	"Apocrypha.png",
 	"Babylonia.png",
@@ -22,3 +22,11 @@ bgImage.src = `img/${chosenImage}`;
 bgImage.id = "background";
 
 document.querySelector("#momentum").appendChild(bgImage);
+
+const bgSet = document.getElementById("bg-set");
+bgSet.addEventListener("change", (event) => {
+	const file = event.target.files[0];
+	const url = URL.createObjectURL(file);
+	bgImage.src = `${url}`;
+	bgSet.value = null;
+});

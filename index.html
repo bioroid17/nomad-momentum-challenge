@@ -47,9 +47,9 @@
 				</div>
 			</main>
 			<footer>
-				<label for="bg-add">
-					Add Background
-					<input type="file" accept="image/*" id="bg-add" />
+				<label for="bg-set">
+					Set Background
+					<input type="file" accept="image/*" id="bg-set" />
 				</label>
 				<div id="quote">
 					<span></span>
@@ -60,6 +60,23 @@
 					<span>Bright</span>
 				</div>
 			</footer>
+			<div id="links-modal" class="hidden">
+				<div id="add-link">+ Add Link</div>
+				<div id="favorites"></div>
+			</div>
+			<div id="new-link" class="hidden">
+				<form id="new-link-form">
+					<input
+						type="text"
+						id="name"
+						placeholder="Name"
+						required
+						maxlength="10"
+					/>
+					<input type="url" id="url" placeholder="URL" required />
+					<button id="create-btn">Create</button>
+				</form>
+			</div>
 		</div>
 		<div id="meme-maker" class="hidden">
 			<div class="color-options">
@@ -156,5 +173,6 @@
 		<script src="js/weather.js"></script>
 		<script src="js/font-color.js"></script>
 		<script src="js/meme-maker.js"></script>
+		<script src="js/favorites.js"></script>
 	</body>
 </html>

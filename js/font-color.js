@@ -1,4 +1,3 @@
-const momentum = document.getElementById("momentum");
 const dark = document.querySelector("#font-color span:first-child");
 const bright = document.querySelector("#font-color span:last-child");
 

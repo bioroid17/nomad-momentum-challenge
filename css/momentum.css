@@ -25,9 +25,9 @@ ul {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
-	align-items: center;
 	box-sizing: border-box;
 	padding: 0px 15px 5px 15px;
+	font-weight: 600;
 }
 .bright {
 	color: lightgray;
@@ -78,6 +78,38 @@ header {
 #temperature {
 	font-size: 32px;
 }
+#links-modal,
+#new-link {
+	background-color: black;
+	opacity: 0.7;
+	width: 200px;
+	border-radius: 20px;
+	border: none;
+	position: absolute;
+	top: 70px;
+	left: 20px;
+	padding: 20px;
+}
+#favorites {
+	max-height: 150px;
+	margin-top: 15px;
+}
+#favorites div {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+#favorites img {
+	margin-right: 5px;
+}
+#new-link input {
+	background-color: transparent;
+	border: none;
+	border-bottom: 2px solid white;
+	margin-bottom: 30px;
+	color: white;
+}
 
 main {
 	flex-direction: column;
@@ -108,7 +140,7 @@ main {
 	justify-content: space-between;
 	align-items: center;
 }
-#momentum input {
+main input {
 	border: none;
 	color: white;
 	background-color: transparent;
@@ -132,12 +164,13 @@ main {
 	justify-content: space-between;
 	align-items: center;
 }
-#todo-list button {
+#todo-list button,
+#favorites button {
 	background-color: transparent;
 }
 
 footer {
-	height: 30px;
+	height: 40px;
 	flex-direction: row;
 	justify-content: space-between;
 }
@@ -153,7 +186,9 @@ footer {
 #weather,
 #links,
 #custom,
-#font-color span {
+#font-color span,
+#add-link,
+.fav-url {
 	padding: 5px;
 	cursor: pointer;
 	border-radius: 5px;
@@ -164,7 +199,9 @@ footer {
 #weather:hover,
 #links:hover,
 #custom:hover,
-#font-color span:hover {
+#font-color span:hover,
+#add-link:hover,
+.fav-url:hover {
 	background-color: rgba(127, 127, 127, 0.5);
 }
 
